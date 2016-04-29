@@ -1,0 +1,964 @@
+
+// Color Variables
+@primary: #00b39b;
+@primary-lighter: #00CBB0;
+@secondary: #3d4660;
+@secondary-lighter: #566180;
+@secondary-super-light: #f5f6f9;
+@button-secondary: #7282AE;
+@button-secondary-hover: #9CAAD2;
+@input-border-color: #D5D8E0;
+@body-color: #313237;
+
+// Font Variables
+@body-font: 'Palanquin', sans-serif;
+
+// Transition Mixin
+.transition {
+  -webkit-transition: all 200ms ease-in-out;
+     -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+       -o-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out;
+}
+
+// Remove the friggin' sidebar
+.remove-sidebar {
+  .sidebar-container {
+    display: none;
+  }
+
+  .entry-header,
+  .entry-content,
+  .entry-summary,
+  .entry-meta {
+      padding-right: 30px;
+      padding-left: 30px;
+  }
+}
+
+// Button Mixin
+.button-style {
+  background: @primary;
+  border-bottom: none;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  display: block;
+  font-family: @body-font;
+  font-size: 16px;
+  font-weight: 700;
+  height: 48px;
+  letter-spacing: 1px;
+  padding: 0 24px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  .transition;
+
+  &:hover {
+    background: @primary-lighter;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.button-secondary-style {
+  background: @button-secondary;
+
+  &:hover {
+    background: @button-secondary-hover;
+  }
+}
+
+/* Micro ClearFix Mixin */
+.clearfix{
+  zoom:1;
+  &:before, &:after{ content:""; display:table; }
+  &:after{ clear: both; }
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #f4f4f5;
+  background-size: 100% auto;
+  font-weight: 400;
+  font-family: @body-font;
+  color: @body-color;
+}
+
+a,
+.entry-meta a,
+.entry-content a,
+.navigation a {
+  color: @primary;
+  text-decoration: none;
+  font-style: normal;
+  .transition;
+
+  &:visited {
+    color: @primary;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: @primary-lighter;
+  }
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+em, i {
+  font-style: italic;
+  font-weight: inherit;
+}
+
+.site {
+  background: transparent;
+  border: none;
+  max-width: 100%;
+}
+
+#main {
+  background: #FFF;
+  border-radius: 2px;
+}
+
+.search-form {
+  display: none;
+}
+
+.comment-respond {
+  background: @secondary-super-light;
+}
+
+.toggled-on, {
+  .nav-menu {
+    &> li a:focus,
+    &> ul a:focus {
+      background-color: darken(@secondary, 10%);
+    }
+  }
+}
+
+.site-header {
+  .home-link {
+    min-height: 270px;
+    padding-top: 20px;
+
+    .site-title {
+      background: url(https://2015.asheville.wordcamp.org/files/2015/05/wordcamp-logo-20151.png) no-repeat center top;
+      height: 133px;
+      width: 200px;
+      background-size: contain;
+      margin: 0 auto;
+      text-indent: -9999em;
+      padding: 0;
+    }
+
+    .site-description {
+      background: url(https://2015.asheville.wordcamp.org/files/2015/05/tagline_2x.png) no-repeat center top;
+      width: 280px;
+      height: 30px;
+      background-size: contain;
+      margin: 0 auto;
+      top: 10px;
+      text-indent: -9999em;
+      clip: auto;
+      position: relative;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background: url(https://2015.asheville.wordcamp.org/files/2015/05/conference-date_2x1.png) no-repeat center top;
+      width: 150px;
+      height: 54px;
+      background-size: contain;
+      margin: 0 auto;
+      position: relative;
+      top: 20px;
+    }
+  }
+}
+
+body.page,
+body.single {
+  .site-header {
+    .home-link {
+      min-height: 130px;
+
+      .site-title {
+        background-image: url(https://2015.asheville.wordcamp.org/files/2015/05/logo-subpage_2x.png);
+        height: 91px;
+        width: 280px;
+      }
+
+      .site-description {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+header#masthead {
+  background: none;
+  margin-top: 60px;
+}
+
+.widget {
+  background-color: @secondary-super-light;
+  border-radius: 2px;
+}
+
+#text-2 img {
+  width: 100%;
+  max-width: 98px;
+  margin: 15px;
+}
+
+#secondary {
+  .widget-area {
+    height: auto !important;
+  }
+
+  .wcb_widget_sponsors {
+    width: 100%;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+
+    h3.widget-title {
+      font-style: normal;
+      font-weight: 400;
+      color: #A79878;
+      font-size: 28px;
+    }
+
+    .sponsor-level {
+      .sponsor-level-title {
+        font-weight: 300;
+        color: #BDB29A;
+        margin-bottom: 0;
+
+        &:after {
+          content: "";
+          display: block;
+          background: #E4DED2;
+          height: 2px;
+          width: 100%;
+        }
+      }
+
+      .sponsor-logo {
+        margin: 40px 0;
+        .transition;
+
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+  }
+}
+
+.wcorg-mailchimp input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, p, li, input, textarea {
+  font-family: @body-font;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.hentry {
+  padding: 15px 0 60px;
+}
+
+.site-main .sidebar-container {
+  top: 60px;
+}
+
+.entry-title::after {
+  content: '';
+  display: block;
+  height: 10px;
+  border-top: 2px solid @secondary-super-light;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.entry-title,
+.entry-title a {
+  font-family: @body-font;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 42px;
+  color: @body-color;
+}
+
+.entry-title a:hover {
+  color: @primary;
+  text-decoration: none;
+}
+
+.entry-meta {
+  a::before {
+    position: relative;
+    top: -1px;
+    font-size: 20px !important;
+    margin-right: 1px;
+  }
+
+  .author {
+    display: none;
+  }
+}
+
+.entry-content {
+  font-family: @body-font;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  position: relative;
+}
+
+footer.site-footer {
+  background: @secondary;
+  text-align: center !important;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 1.5pt;
+
+  #secondary {
+    background: @secondary-super-light;
+    border-top: 2px solid #ECEBDD;
+  }
+
+  .widget-title, .widget-title a, .wp-caption-text {
+    color: #000;
+  }
+
+  .site-info {
+    padding: 100px 0;
+    border-top: 2px solid @secondary;
+  }
+
+  a {
+    color: #FFF;
+  }
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+a.button,
+.widget a.button {
+  .button-style;
+
+  &.secondary {
+    .button-secondary-style;
+  }
+}
+
+a.button {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: 1px solid @input-border-color;
+}
+
+.wcorg-sponsor-description div {
+  margin-bottom: 24px;
+}
+
+#text-4 img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+// Tagregator
+body.tagregator {
+
+  &.sidebar .entry-header,
+  &.sidebar .entry-content,
+  &.sidebar .entry-summary,
+  &.sidebar .entry-meta {
+    padding: 0 0 0 60px;
+  }
+
+  .site-main .sidebar-container {
+    display: none;
+  }
+
+  .tggr-media-item {
+    border-color: #E7E7E7;
+  }
+
+}
+
+.navbar {
+  .nav-menu {
+    li {
+      a {
+        color: #FFF;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        .transition;
+      }
+    }
+  }
+}
+
+// Navbar fixes
+@media screen and (min-width: 1203px) {
+  .navbar .nav-menu li a {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1044px) and (max-width: 1202px) {
+  .navbar .nav-menu li a {
+    padding: 0 15px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 644px) and (max-width: 1043px) {
+  .navbar .nav-menu li a {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
+// Only Desktop Changes
+@media screen and (min-width: 644px) {
+  body {
+    background: #FFF url(https://2015.asheville.wordcamp.org/files/2015/05/asheville-background.jpg) no-repeat;
+  }
+
+  .home .site-header {
+    .home-link {
+      padding-top: 48px;
+      min-height: 510px;
+
+      .site-title {
+        background-image: url(https://2015.asheville.wordcamp.org/files/2015/05/wordcamp-logo-2015_2x1.png);
+        height: 277px;
+        width: 415px;
+      }
+
+      .site-description {
+        width: 707px;
+        height: 75px;
+        top: 20px;
+        position: relative;
+      }
+
+      &::after {
+        width: 220px;
+        top: 36px;
+      }
+    }
+  }
+
+  body.page,
+  body.single {
+    .site-header {
+      .home-link {
+        .site-title {
+          height: 148px;
+          width: 480px;
+        }
+      }
+    }
+  }
+
+  // Navbar
+  #navbar {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    max-width: 100%;
+    background: @secondary;
+    z-index: 10000;
+
+    .nav-menu {
+      padding: 0;
+
+      .current_page_item > a,
+      .current_page_ancestor > a,
+      .current-menu-item > a,
+      .current-menu-ancestor > a {
+        font-style: normal;
+        background: @secondary-lighter;
+
+        &:hover {
+          cursor: default;
+          background: @secondary-lighter;
+          color: #fff;
+        }
+      }
+
+      li {
+        float: left;
+
+        a {
+          line-height: 60px;
+
+          &:hover {
+            background-color: @primary;
+            color: #fff;
+          }
+        }
+
+        &:hover > a {
+          background-color: @secondary;
+        }
+      }
+
+      .sub-menu,
+      .children {
+        border: none;
+        left: 0;
+        background-color: @secondary;
+
+        li {
+          width: 100%;
+
+          a {
+            line-height: 24px;
+            padding: 12px 20px;
+            border-bottom: 1px solid #2C503A;
+            text-align: left;
+            width: 100%;
+            min-width: 200px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    li.tickets {
+      float: right;
+
+      a {
+        background: @primary;
+        color: #fff;
+        .transition;
+
+        &:hover {
+          background: @primary-lighter;
+          color: #fff;
+        }
+      }
+    }
+
+    li.current_page_item.home:after,
+    li.current_page_item.tickets:after {
+      display: none;
+    }
+  }
+
+
+  .main-navigation {
+    max-width: 100% !important;
+  }
+
+  .site-content {
+    min-height: 720px;
+  }
+
+  .hentry {
+    padding: 60px 0;
+  }
+
+  #main {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  // Sponsor logos
+  #secondary .wcb_widget_sponsors .sponsor-level .sponsor-logo {
+    width: 50%;
+    display: block;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  // Champion level
+  #secondary .wcb_widget_sponsors .sponsor-level.wordcamp-champion .sponsor-logo {
+    width: 33%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  // Accomplise level
+  #secondary .wcb_widget_sponsors .sponsor-level.wordcamp-accomplice .sponsor-logo {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  #secondary .wcb_widget_sponsors .sponsor-level.small-business-sponsor .sponsor-logo {
+    min-height: 100px;
+  }
+  
+  // In-Kind level
+  #secondary .wcb_widget_sponsors .sponsor-level.in-kind-sponsor .sponsor-logo {
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 174px;
+  }
+}
+
+// Mobile Changes
+@media screen and (max-width: 643px) {
+  #masthead {
+    margin-top: 52px;
+  }
+
+  .navbar {
+    background-color: @secondary;
+    color: #FFF !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+
+    .nav-menu li a,
+    .nav-menu li > ul a {
+      color: #FFF;
+    }
+
+    .current-menu-item,
+    .current_page_item,
+    .current-menu-ancestor,
+    .current-menu-parent,
+    .current_page_ancestor {
+      background: @primary;
+
+      a {
+        font-style: normal;
+      }
+    }
+
+    .menu-item-has-children {
+      &::after {
+        -webkit-font-smoothing: antialiased;
+        display: block;
+        font: normal 12px/1 Genericons;
+        vertical-align: text-bottom;
+        content: "\f502";
+        position: absolute;
+        top: 21px;
+        right: 20px;
+      }
+
+      &.focus {
+        background: #2D3345;
+      }
+    }
+
+    .nav-menu .sub-menu,
+    .nav-menu .children {
+      border: none;
+      margin-left: 0;
+
+      li {
+        background: darken(@secondary, 5%);
+      }
+    }
+
+    .menu-toggle,
+    .menu-toggle:hover,
+    .menu-toggle:focus,
+    .menu-toggle:active {
+      color: #fff;
+      padding: 12px 0 12px 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+// Fixing a crappy FF bug
+.entry-content,
+.site-content article,
+body,
+p,
+* {
+  -moz-hyphens: none !important;
+  -webkit-hyphens: none !important;
+  -moz-hyphens: none !important;
+  hyphens: none !important;
+}
+
+// Hide the number of tickets remaining from the Tickets page
+.tix-column-remaining {
+    display: none;
+}
+
+// Fix the attendees page layout
+#tix-attendees li {
+    height: 120px;  
+}
+
+
+// Schedule
+.wcpt-schedule {
+  td {
+    vertical-align: top;
+  }
+  .wcpt-track-name {
+    display: block;
+  }
+  .wcpt-session-title {
+    display: block;
+  }
+}
+
+// Schedule Colors:
+@s-gray: #797979;
+@s-purple2015: #3D4660;
+@s-orange: #EC5B2F;
+@s-blue: darken(#2D99C8, 10%);
+@s-green: darken(#33AA97, 10%);
+@s-purple: #AE4395;
+
+@s-color1: #00b39b;
+@s-color2: #0D97A3;
+@s-color3: #10719B;
+@s-color4: #175999;
+@s-color-general: #F5F6F9;
+
+// @s-color1: #6072A1;
+// @s-color2: #6072A1;
+// @s-color3: #4F649B;
+// @s-color4: #40558C;
+
+// @s-color1: #00CBB0;
+// @s-color2: #00B39B;
+// @s-color3: #009985;
+// @s-color4: #008170;
+
+body.page-id-5,
+body.page-id-1229 {
+  .remove-sidebar;
+
+  .color-key {
+    margin-bottom: 20px;
+    clear: both;
+
+    & > div {
+      padding: 5px;
+      color: @body-color;
+      font-size: 14px;
+    }
+
+    .key-everyone,
+    .key-break,
+    .key1,
+    .key2,
+    .key3,
+    .key4 {
+      padding-left: 35px;
+      position: relative;
+
+      @media all and (min-width: 701px) {
+        float: left;
+        margin-right: 20px;
+      }
+
+      &::before {
+        background: @s-color-general;
+        border-radius: 100px;
+        content: "";
+        display: block;
+        height: 30px;
+        left: 0;
+        position: absolute;
+        top: 7px;
+        width: 30px;
+      }
+    }
+
+    .key1 {
+      &::before {
+        background: @s-color1;
+      }
+    }
+    .key2 {
+      &::before {
+        background: @s-color2;
+      }
+    }
+    .key3 {
+      &::before {
+        background: @s-color3;
+      }
+    }
+    .key4 {
+      &::before {
+        background: @s-color4;
+      }
+    }
+  }
+
+  .wcpt-schedule {
+    td {
+      vertical-align: top;
+    }
+
+    // Track Highlighting
+    .wcb-track-all-users,
+    .wcb-track-business,
+    .wcb-track-design-front-end,
+    .wcb-track-developers,
+    .wcpt-session-type-custom,
+    .wcb-session-lunch {
+      border-left: 15px solid @s-color-general;
+    }
+
+    .wcb-track-all-users {
+      border-left-color: @s-color1;
+    }
+    .wcb-track-business {
+      border-left-color: @s-color2;
+    }
+    .wcb-track-design-front-end {
+      border-left-color: @s-color3;
+    }
+    .wcb-track-developers {
+      border-left-color: @s-color4;
+    }
+    
+    .wcpt-session-type-custom,
+    .wcb-session-lunch {
+      background: @s-color-general;
+      border-left-color: @s-color-general;
+      text-align: center;
+    }
+		
+		// After Party/Wedge Brewing Stuff
+		@wedge-color: rgb(250, 189, 94);
+
+		.wcb-session-after-party,
+		.wcb-session-after-party-wedge-brewing {
+			text-align: center;
+			background-color: @wedge-color;
+			border-left: 15px solid @wedge-color;
+			
+			&:hover {
+				background-color: lighten(@wedge-color, 10%) !important;
+				border-left-color: lighten(@wedge-color, 10%) !important;
+			}
+		}
+    
+    .wcpt-session-type-custom,
+    .wcpt-session-type-session {
+      padding-left: 10px;
+      .transition;
+
+      &:hover {
+        background: #F0FFFD;
+        border-left-color: @secondary;
+      }
+
+      @media all and (min-width: 701px) {
+        width: 23%;
+      }
+    }
+    .wcpt-track-name {
+      display: block;
+    }
+    .wcpt-session-title {
+      color: @body-color;
+      line-height: 1.5;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .wcpt-session-title {
+      display: block;
+    }
+    .wcpt-session-speakers {
+      a {
+        color: @body-color;
+
+        &:before {
+          content: '- ';
+        }
+      }
+      &:before {
+        display: none;
+      }
+    }
+    .wcpt-session-type-session:before {
+      color: #fff;
+    }
+    
+    .wcpt-session-empty {
+      display: none;
+    }
+  }
+}
+
+// Attendee page
+body.page-id-12 {
+  .remove-sidebar;
+}
+
+
+@media all and (min-width: 500px) {
+  #post-1 .color-key > div {
+    float: left;
+    width: 50%;
+  }
+  #post-1 .wcpt-schedule td {
+    border-right: 1px solid #fff;
+  }
+}
+
+// Organizer page
+
+.wcorg-organizer-description .photo {
+	float: left;
+	margin: 0 1.2em 0.8em 0;
+}
+
+// When you're logged in - cause Lydia bitched...
+body.admin-bar {
+  margin-top: 32px;
+  
+  #navbar {
+    top: 32px;
+  }
+}
