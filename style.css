@@ -2,3 +2,8 @@
 Hoja de estilos para modificar los estilos originales del tema elegido desde GitHub
 
  */
+@media screen and (min-width: 644px) {
+	.home .site-header .home-link .site-title {
+	    display: none;
+	}
+}
