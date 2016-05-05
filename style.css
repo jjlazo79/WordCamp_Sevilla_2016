@@ -16,7 +16,7 @@
   padding-left: 30px;
 }
 .button-style {
-  background: #00b39b;
+  background: #02B8FF;
   border-bottom: none;
   border-radius: 100px;
   border: none;
@@ -38,7 +38,7 @@
   transition: all 200ms ease-in-out;
 }
 .button-style:hover {
-  background: #00CBB0;
+  background: #01A0F0;
   color: #fff;
   text-decoration: none;
 }
@@ -76,7 +76,7 @@ a,
 .entry-meta a,
 .entry-content a,
 .navigation a {
-  color: #00b39b;
+  color: #02B8FF;
   text-decoration: none;
   font-style: normal;
   -webkit-transition: all 200ms ease-in-out;
@@ -89,14 +89,14 @@ a:visited,
 .entry-meta a:visited,
 .entry-content a:visited,
 .navigation a:visited {
-  color: #00b39b;
+  color: #02B8FF;
   text-decoration: none;
 }
 a:hover,
 .entry-meta a:hover,
 .entry-content a:hover,
 .navigation a:hover {
-  color: #00CBB0;
+  color: #01A0F0;
 }
 strong,
 b {
@@ -124,7 +124,7 @@ i {
 }
 .toggled-on .nav-menu > li a:focus,
 .toggled-on .nav-menu > ul a:focus {
-  background-color: #292f41;
+  background-color: #ce530b;
 }
 .site-header .home-link {
   min-height: 270px;
@@ -149,6 +149,7 @@ i {
   position: relative;
   text-align: center;
   font-size: 1em;
+  color: #F5F6F9;
 }
 .site-header .home-link::after {
   content: "";
@@ -272,7 +273,7 @@ h3 {
   color: #313237;
 }
 .entry-title a:hover {
-  color: #00b39b;
+  color: #02B8FF;
   text-decoration: none;
 }
 .entry-meta a::before {
@@ -292,7 +293,7 @@ h3 {
   position: relative;
 }
 footer.site-footer {
-  background: #3d4660;
+  background: #F36A19;
   text-align: center !important;
   text-transform: uppercase;
   font-size: 16px;
@@ -310,7 +311,7 @@ footer.site-footer .wp-caption-text {
 }
 footer.site-footer .site-info {
   padding: 100px 0;
-  border-top: 2px solid #3d4660;
+  border-top: 2px solid #F36A19;
 }
 footer.site-footer a {
   color: #FFF;
@@ -321,7 +322,7 @@ input[type="button"],
 input[type="reset"],
 a.button,
 .widget a.button {
-  background: #00b39b;
+  background: #02B8FF;
   border-bottom: none;
   border-radius: 100px;
   border: none;
@@ -348,7 +349,7 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 a.button:hover,
 .widget a.button:hover {
-  background: #00CBB0;
+  background: #01A0F0;
   color: #fff;
   text-decoration: none;
 }
@@ -464,7 +465,7 @@ body.tagregator .tggr-media-item {
     top: 0;
     height: 60px;
     max-width: 100%;
-    background: #3d4660;
+    background: #F36A19;
     z-index: 10000;
   }
   #navbar .nav-menu {
@@ -475,14 +476,14 @@ body.tagregator .tggr-media-item {
   #navbar .nav-menu .current-menu-item > a,
   #navbar .nav-menu .current-menu-ancestor > a {
     font-style: normal;
-    background: #566180;
+    background: #FE8843;
   }
   #navbar .nav-menu .current_page_item > a:hover,
   #navbar .nav-menu .current_page_ancestor > a:hover,
   #navbar .nav-menu .current-menu-item > a:hover,
   #navbar .nav-menu .current-menu-ancestor > a:hover {
     cursor: default;
-    background: #566180;
+    background: #FE8843;
     color: #fff;
   }
   #navbar .nav-menu li {
@@ -492,17 +493,17 @@ body.tagregator .tggr-media-item {
     line-height: 60px;
   }
   #navbar .nav-menu li a:hover {
-    background-color: #00b39b;
+    background-color: #02B8FF;
     color: #fff;
   }
   #navbar .nav-menu li:hover > a {
-    background-color: #3d4660;
+    background-color: #F36A19;
   }
   #navbar .nav-menu .sub-menu,
   #navbar .nav-menu .children {
     border: none;
     left: 0;
-    background-color: #3d4660;
+    background-color: #F36A19;
   }
   #navbar .nav-menu .sub-menu li,
   #navbar .nav-menu .children li {
@@ -522,7 +523,7 @@ body.tagregator .tggr-media-item {
     float: right;
   }
   #navbar li.tickets a {
-    background: #00b39b;
+    background: #02B8FF;
     color: #fff;
     -webkit-transition: all 200ms ease-in-out;
     -moz-transition: all 200ms ease-in-out;
@@ -531,7 +532,7 @@ body.tagregator .tggr-media-item {
     transition: all 200ms ease-in-out;
   }
   #navbar li.tickets a:hover {
-    background: #00CBB0;
+    background: #01A0F0;
     color: #fff;
   }
   #navbar li.current_page_item.home:after,
@@ -583,7 +584,7 @@ body.tagregator .tggr-media-item {
     margin-top: 52px;
   }
   .navbar {
-    background-color: #3d4660;
+    background-color: #F36A19;
     color: #FFF !important;
     position: fixed;
     top: 0;
@@ -599,7 +600,7 @@ body.tagregator .tggr-media-item {
   .navbar .current-menu-ancestor,
   .navbar .current-menu-parent,
   .navbar .current_page_ancestor {
-    background: #00b39b;
+    background: #02B8FF;
   }
   .navbar .current-menu-item a,
   .navbar .current_page_item a,
@@ -628,7 +629,7 @@ body.tagregator .tggr-media-item {
   }
   .navbar .nav-menu .sub-menu li,
   .navbar .nav-menu .children li {
-    background: #333b50;
+    background: #e65d0c;
   }
   .navbar .menu-toggle,
   .navbar .menu-toggle:hover,
@@ -832,7 +833,7 @@ body.page-id-1229 .wcpt-schedule .wcpt-session-type-custom:hover,
 body.page-id-5 .wcpt-schedule .wcpt-session-type-session:hover,
 body.page-id-1229 .wcpt-schedule .wcpt-session-type-session:hover {
   background: #F0FFFD;
-  border-left-color: #3d4660;
+  border-left-color: #F36A19;
 }
 @media all and (min-width: 701px) {
   body.page-id-5 .wcpt-schedule .wcpt-session-type-custom,
