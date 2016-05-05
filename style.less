@@ -11,7 +11,11 @@
 @body-color: #313237;
 
 // Font Variables
-@body-font: 'Palanquin', sans-serif;
+@body-font: 'Ubuntu', sans-serif;
+
+// URL Variables
+@upload-directory: "https://2016.sevilla.wordcamp.org/files";
+// Used = background-image: url("@{upload-directory}/2016/05/image.png");
 
 // Transition Mixin
 .transition {
@@ -154,7 +158,7 @@ em, i {
     padding-top: 20px;
 
     .site-title {
-      background: url(https://2015.asheville.wordcamp.org/files/2015/05/wordcamp-logo-20151.png) no-repeat center top;
+      background: url("@{upload-directory}/2016/05/wordcamp_sevilla_logo_movil.png") no-repeat center top;
       height: 133px;
       width: 200px;
       background-size: contain;
@@ -164,21 +168,23 @@ em, i {
     }
 
     .site-description {
-      background: url(https://2015.asheville.wordcamp.org/files/2015/05/tagline_2x.png) no-repeat center top;
+      // background: url("@{upload-directory}/2016/05/tagline_2x.png") no-repeat center top;
       width: 280px;
       height: 30px;
       background-size: contain;
       margin: 0 auto;
       top: 10px;
-      text-indent: -9999em;
+      // text-indent: -9999em;
       clip: auto;
       position: relative;
+      text-align: center;
+      font-size: 1em;
     }
 
     &::after {
       content: "";
       display: block;
-      background: url(https://2015.asheville.wordcamp.org/files/2015/05/conference-date_2x1.png) no-repeat center top;
+      background: url("@{upload-directory}/2016/05/fecha.png") no-repeat center top;
       width: 150px;
       height: 54px;
       background-size: contain;
@@ -196,7 +202,7 @@ body.single {
       min-height: 130px;
 
       .site-title {
-        background-image: url(https://2015.asheville.wordcamp.org/files/2015/05/logo-subpage_2x.png);
+        background-image: url("@{upload-directory}/2016/05/logo-subpage_2x.png");
         height: 91px;
         width: 280px;
       }
@@ -449,6 +455,9 @@ body.tagregator {
     padding: 0 15px;
     font-size: 13px;
   }
+  .site-description {
+    font-size: 3em;
+  }
 }
 
 @media screen and (min-width: 644px) and (max-width: 1043px) {
@@ -461,7 +470,7 @@ body.tagregator {
 // Only Desktop Changes
 @media screen and (min-width: 644px) {
   body {
-    background: #FFF url(https://2015.asheville.wordcamp.org/files/2015/05/asheville-background.jpg) no-repeat;
+    background: #FFF url("@{upload-directory}/2016/05/sevilla_16.jpg") no-repeat;
   }
 
   .home .site-header {
@@ -470,7 +479,7 @@ body.tagregator {
       min-height: 510px;
 
       .site-title {
-        background-image: url(https://2015.asheville.wordcamp.org/files/2015/05/wordcamp-logo-2015_2x1.png);
+        background-image: url("@{upload-directory}/2016/05/wordcamp_sevilla_logo.png");
         height: 277px;
         width: 415px;
       }
@@ -480,6 +489,7 @@ body.tagregator {
         height: 75px;
         top: 20px;
         position: relative;
+        font-size: 2em;
       }
 
       &::after {
