@@ -120,7 +120,7 @@ i {
   display: none;
 }
 .comment-respond {
-  background: #f5f6f9;
+  background: #FC9F6A;
 }
 .toggled-on .nav-menu > li a:focus,
 .toggled-on .nav-menu > ul a:focus {
@@ -144,7 +144,7 @@ i {
   height: 30px;
   background-size: contain;
   margin: 0 auto;
-  top: 10px;
+  top: 0px;
   clip: auto;
   position: relative;
   text-align: center;
@@ -155,12 +155,12 @@ i {
   content: "";
   display: block;
   background: url("https://2016.sevilla.wordcamp.org/files/2016/05/fecha.png") no-repeat center top;
-  width: 150px;
+  width: 200px;
   height: 54px;
   background-size: contain;
   margin: 0 auto;
   position: relative;
-  top: 20px;
+  top: 0px;
 }
 body.page .site-header .home-link,
 body.single .site-header .home-link {
@@ -185,7 +185,7 @@ header#masthead {
   margin-top: 60px;
 }
 .widget {
-  background-color: #f5f6f9;
+  background-color: #FC9F6A;
   border-radius: 2px;
 }
 #text-2 img {
@@ -260,7 +260,7 @@ h3 {
   content: '';
   display: block;
   height: 10px;
-  border-top: 2px solid #f5f6f9;
+  border-top: 2px solid #FC9F6A;
   width: 100%;
   margin-top: 14px;
 }
@@ -301,7 +301,7 @@ footer.site-footer {
   letter-spacing: 1.5pt;
 }
 footer.site-footer #secondary {
-  background: #f5f6f9;
+  background: #FC9F6A;
   border-top: 2px solid #ECEBDD;
 }
 footer.site-footer .widget-title,
@@ -447,13 +447,13 @@ body.tagregator .tggr-media-item {
   .home .site-header .home-link .site-description {
     width: 707px;
     height: 75px;
-    top: 20px;
+    top: 0px;
     position: relative;
     font-size: 2em;
   }
   .home .site-header .home-link::after {
-    width: 220px;
-    top: 36px;
+    width: 350px;
+    top: 0px;
   }
   body.page .site-header .home-link .site-title,
   body.single .site-header .home-link .site-title {
