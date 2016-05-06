@@ -865,7 +865,11 @@ body.page-id-1229 .wcpt-schedule .wcpt-session-type-session:before {
   color: #fff;
 }
 body.page-id-5 .wcpt-schedule .wcpt-session-empty,
-body.page-id-1229 .wcpt-schedule .wcpt-session-empty {
+body.page-id-1229 .wcpt-schedule .wcpt-session-empty,
+body.page-id-5 .wcpt-schedule .wcorg-speakers .none,
+body.page-id-1229 .wcpt-schedule .wcorg-speakers .none,
+body.page-id-5 .wcpt-schedule .single-wcb_speaker .enlace.bio,
+body.page-id-1229 .wcpt-schedule .single-wcb_speaker .enlace.bio {
   display: none;
 }
 body.page-id-12 .sidebar-container {
