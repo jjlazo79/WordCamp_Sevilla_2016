@@ -869,6 +869,9 @@ body.page-id-1229 .wcpt-schedule .wcpt-session-empty {
   display: none;
 }
 .wcorg-speakers .none,
+.wcorg-speakers .list {
+  display: none;
+}
 .single-wcb_speaker .enlace.bio {
   display: none;
 }
