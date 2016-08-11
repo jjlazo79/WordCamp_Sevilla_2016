@@ -199,18 +199,18 @@ header#masthead {
 #secondary .wcb_widget_sponsors h3.widget-title {
   font-style: normal;
   font-weight: 400;
-  color: #A79878;
+  color: #FFF;
   font-size: 28px;
 }
 #secondary .wcb_widget_sponsors .sponsor-level .sponsor-level-title {
   font-weight: 300;
-  color: #BDB29A;
+  color: #000;
   margin-bottom: 0;
 }
 #secondary .wcb_widget_sponsors .sponsor-level .sponsor-level-title:after {
   content: "";
   display: block;
-  background: #E4DED2;
+  background: #F36A19;
   height: 2px;
   width: 100%;
 }
