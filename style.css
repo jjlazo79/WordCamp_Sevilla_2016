@@ -193,8 +193,8 @@ header#masthead {
 #secondary .wcb_widget_sponsors {
   width: 100%;
   position: relative !important;
-  top: auto !important;
-  left: auto !important;
+/*  top: auto !important;
+  left: auto !important;*/
 }
 #secondary .wcb_widget_sponsors h3.widget-title {
   font-style: normal;
