@@ -215,7 +215,7 @@ header#masthead {
   width: 100%;
 }
 #secondary .wcb_widget_sponsors .sponsor-level .sponsor-logo {
-  margin: 40px 0;
+  margin: 40px 2%;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
@@ -543,7 +543,7 @@ body.tagregator .tggr-media-item {
     margin: 0 auto;
   }
   #secondary .wcb_widget_sponsors .sponsor-level .sponsor-logo {
-    width: 50%;
+    width: 45%;
     display: block;
     float: left;
     text-align: center;
