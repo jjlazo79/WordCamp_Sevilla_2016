@@ -165,6 +165,14 @@ i {
 .page-id-7 .entry-meta {
   max-width: 80%;
 }
+.wcpt-schedule tr th:first-child {
+  width: 9%;
+}
+.wcpt-schedule tr th:nth-child(2),
+.wcpt-schedule tr th:nth-child(3),
+.wcpt-schedule tr th:nth-child(4) {
+  width: 30%;
+}
 body.page .site-header .home-link,
 body.single .site-header .home-link {
   min-height: 130px;
