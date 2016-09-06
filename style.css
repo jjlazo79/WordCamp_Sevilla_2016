@@ -166,12 +166,15 @@ i {
   max-width: 80%;
 }
 .wcpt-schedule tr th:first-child {
-  width: 9%;
+  width: 6%;
 }
 .wcpt-schedule tr th:nth-child(2),
 .wcpt-schedule tr th:nth-child(3),
 .wcpt-schedule tr th:nth-child(4) {
-  width: 30%;
+  width: 31%;
+}
+td {
+  padding: 6px 15px 6px 5px;
 }
 body.page .site-header .home-link,
 body.single .site-header .home-link {
