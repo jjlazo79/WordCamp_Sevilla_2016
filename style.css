@@ -159,6 +159,12 @@ i {
   position: relative;
   top: 0px;
 }
+.page-id-7 .entry-header,
+.page-id-7 .entry-content,
+.page-id-7 .entry-summary,
+.page-id-7 .entry-meta {
+  max-width: 80%;
+}
 body.page .site-header .home-link,
 body.single .site-header .home-link {
   min-height: 130px;
