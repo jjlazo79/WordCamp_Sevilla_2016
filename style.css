@@ -875,6 +875,12 @@ body.page-id-1229 .wcpt-schedule .wcpt-session-empty {
 .single-wcb_speaker .enlace.bio {
   display: none;
 }
+.wcpt-session-speakers a {
+  color: #F36A19;
+}
+.wcorg-speaker {
+  border-bottom: solid #F36A19;
+}
 body.page-id-12 .sidebar-container {
   display: none;
 }
