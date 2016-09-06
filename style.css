@@ -662,6 +662,10 @@ p,
 #tix-attendees li {
   height: 120px;
 }
+.wcpt-session-type-custom {
+  background: whitesmoke;
+  text-align: center;
+}
 .wcpt-schedule .wcpt-track-name {
   display: block;
 }
