@@ -202,6 +202,12 @@ header#masthead {
   background-color: #FC9F6A;
   border-radius: 2px;
 }
+.sidebar-inner .widget li {
+  background-color: #fff;
+  padding: 2%;
+  margin: 10px auto;
+  border-radius: 10px;
+}
 #text-2 img {
   width: 100%;
   max-width: 98px;
